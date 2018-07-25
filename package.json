@@ -1,0 +1,41 @@
+{
+    "name": "jcolor-react",
+    "version": "1.0.0",
+    "description": "the react version of jColor",
+    "main": "lib/jColor.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "babel src -d lib",
+        "dev": "babel src -d lib --watch & npm run dev:examples",
+        "build:examples": "webpack --config ./webpack.example.config.js",
+        "dev:examples": "webpack-dev-server --config ./webpack.example.config.js",
+        "prepublish": "babel src -d lib"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zmofei/jColor-react.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/zmofei/jColor-react/issues"
+    },
+    "homepage": "https://github.com/zmofei/jColor-react#readme",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-react": "^6.24.1",
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1",
+        "react-loader": "^2.4.5",
+        "webpack": "^4.16.2",
+        "webpack-cli": "^3.1.0",
+        "webpack-dev-server": "^3.1.5"
+    },
+    "dependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-preset-env": "^1.7.0",
+        "jcolor": "^1.0.1",
+        "react-bmap": "^1.0.78"
+    }
+}
